@@ -1,0 +1,871 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    top: 0;
+}
+
+.name-web {
+    margin-left: 50px;
+}
+
+.Tiktek {
+    font-size: 25px;
+    color: orange;
+}
+/*tim kiem*/
+.search-bar {
+    border: 1px solid #dbd8d8;
+    background-color: white;
+    border-radius: 25px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+#search {
+    border: 0px;
+    background-color: white;
+    border-radius: 30px;
+}
+    .search-bar input[type="text"] {
+        border: none;
+        outline: none;
+        width: 250px;
+        padding: 5px;
+        border-radius: 25px;
+    }
+
+        .search-bar input[type="text"]::placeholder {
+            font-family: "Google Sans", sans-serif;
+            font-size: 13px;
+            color: #999;
+        }
+
+.icon-search {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.vertical-line {
+    width: 1px;
+    height: 15px;
+    background-color: #dbd8d8;
+    margin-right: 10px;
+}
+/*Nút upload dropdown*/
+.actions {
+    display: flex;
+    align-items: center;
+    margin-right: 82px;
+}
+
+
+.profile-button {
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.profile-dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.profile-button {
+    background-color: #ff4500;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    height: 37px;
+    width: 78px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        .dropdown-content a:hover {
+            background-color: #ff4500;
+            color: white;
+        }
+
+        .dropdown-content a:first-child {
+            border-top-left-radius: 35px;
+            border-top-right-radius: 35px;
+        }
+
+        .dropdown-content a:last-child {
+            border-bottom-left-radius: 35px;
+            border-bottom-right-radius: 35px;
+        }
+
+.profile-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*Bên trái*/
+
+.sidebar-left {
+    width: 17%;
+    margin-top: 20px;
+    background-color: white;
+}
+
+    .sidebar-left .Main {
+        display: flex;
+    }
+
+.Main {
+    /* padding-top: 10px; */
+    padding-bottom: 20px;
+}
+
+.Profile {
+    padding-bottom: 10px;
+}
+
+.Main a {
+    padding-top: 13px;
+    text-decoration: none;
+    color: #000;
+}
+
+    .Main a:hover {
+        color: #ff4500;
+    }
+
+.Profile a:hover {
+    color: aqua;
+}
+
+.Profile a {
+    padding-top: 13px;
+    text-decoration: none;
+    color: #000;
+}
+
+.Main img {
+    height: 20px;
+    width: 20px;
+    padding-top: 10px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.sidebar-left .Profile {
+    display: flex;
+}
+
+.Profile img {
+    height: 20px;
+    width: 20px;
+    padding-top: 10px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+/*follower*/
+.follow {
+    width: 100%;
+    margin-left: 5px;
+    /* border-radius: 10px; */
+}
+
+.Follow1 {
+    display: flex;
+    padding-left: 10px;
+    /* padding-top: 0px;
+    padding-bottom: 0px;
+    border-radius: 10px; */
+}
+
+.follow-title {
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.Follow1 img {
+    height: 60px;
+    width: 60px;
+    padding-top: 15px;
+    border-radius: 50%;
+}
+
+.Follow-title {
+    font-size: 16px;
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    text-decoration: none;
+    color: black;
+}
+
+.Follow-subtitle {
+    font-size: 13px;
+    /* margin-top: 10px; */
+    margin-left: 10px;
+    margin-top: 8px;
+    
+}
+
+.xemthem {
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+/* Main bên phải */
+
+.body-tiktek {
+    display: flex;
+    width: 100%;
+}
+
+.maincontent {
+    width: 83%;
+    margin-top: 30px;
+    /* top: 140px; */
+    /* position: absolute; */
+    /* right: 200px;
+    z-index: 50; */
+}
+
+.account {
+    display: flex;
+}
+/* .descrip {
+    display: flex;
+    /* justify-content: space-between; 
+    padding-left: 45px;
+}
+
+.account img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    padding-right: 30px;
+}
+
+.main-title {
+    display: flex;
+    width: 50%;
+} */
+
+/* .sidebar-right {
+    width: 80%;
+    top: 100px;
+    left: 20%;
+} */
+
+/* .main-page {
+    justify-content: center;
+    padding-top: 20px;
+    padding-right: 20px;
+} */
+
+/* .chanel-title {
+    justify-content: space-between;
+} */
+
+/* .account {
+    width: 70px;
+    height: 70px; 
+    border-radius: 50%;
+    padding-right: 30px;
+} */
+
+/* .maincontent {
+    width: 550px;
+    height: 100%;
+    top: 140px;
+    position: absolute;
+    left: 250px;
+    z-index: 2;
+} */
+
+/* .maincontent .account {
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        justify-content: center;
+        padding-top: 20px;
+        padding-right: 20px;
+    } */
+
+.chanel-img {
+    /* position: absolute; */
+    width: 116px;
+    height: 116px;
+    border-radius: 50%;
+}
+
+.mieuta {
+    margin-left: 20px;
+}
+
+.userMain {
+    /* position: absolute; */
+    /* left: 135px; */
+    font-weight: bold;
+    /* top: -20px; */
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.decrip {
+    margin-top: 8px;
+    font-size: 18px;
+    /* margin: 0; */
+    /* position: absolute; */
+    /* left: 135px; */
+    /* font-weight: 400; */
+    /* top: 40px; */
+}
+
+.editUser {
+    margin-top: 10px;
+    width: 150px;
+    height: 36px;
+    position: relative;
+    border: 2px solid rgb(133, 133, 133);
+    align-items: center;
+    border-radius: 5px;
+    /* top: 75px;
+    left: 135px; */
+}
+
+    .editUser a img {
+        position: absolute;
+        left: 15px;
+        top: 5px;
+        width: 24px;
+        height: 24px;
+    }
+
+    .editUser a p {
+        font-size: 15px;
+        width: 100px;
+        position: absolute;
+        left: 50px;
+        top: -5px;
+    }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.info {
+    margin-top: 20px;
+    display: flex;
+    position: relative;
+    /* top: 90px;
+    left: -65px; */
+    justify-content: space-between;
+    width: 40%;
+}
+
+    .info .fllowing,
+    .info .fllower,
+    .info .like {
+        text-align: center;
+    }
+
+    .info p {
+        margin: 0;
+        font-size: 16px;
+    }
+/*ListVideo*/
+/* .decrip span {
+    position: absolute; 
+    top: 0px;
+    left: 50px;
+} */
+
+/* .decrip strong {
+    position: absolute; 
+    top: 17px;
+    left: 55px;
+} */
+
+.video {
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    top: 200px;
+}
+
+.grid-video {
+    margin-top: 20px;
+    /*gap: 6px;*/
+    /*display:flex;
+    flex-direction: row;
+    width: 1000px;*/
+    
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+}
+
+    .grid-video .girdview_items {
+        border: 1px solid wheat;
+        width: 240px;
+        margin-bottom: 10px;
+        /* position: relative; */
+    }
+
+.decripstion {
+    width: 100%;
+    height: 40%;
+    margin: auto;
+}
+
+.title {
+    margin: 10px 10px;
+}
+
+.avt {
+    display: flex;
+}
+
+    .avt img {
+        width: 30px;
+        height: 30px;
+        margin: 10px 10px;
+        border-radius: 50%;
+    }
+
+.title {
+    margin: 5px 10px;
+    /* justify-content: end; */
+}
+
+.avt p {
+    font-size: 13px;
+    margin: 20px 5px 0 0;
+}
+
+.avt strong {
+    margin-top: 20px;
+    right: 10px;
+    /* position: absolute; */
+}
+
+.name-web img {
+    top: 40px;
+    /* position: absolute; */
+    visibility: hidden;
+}
+
+.actions img {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+    .header {
+        height: 60px; /* Thu nhỏ padding để tiết kiệm không gian */
+    }
+
+    .search-bar {
+        height: 28px;
+        width: 150px;
+        margin-left: 10px;
+    }
+
+        .search-bar input[type="text"] {
+            width: 110px;
+        }
+    /* Di chuyển các nút tim, share, và comment vào góc dưới bên phải */
+    /* .body-tiktek {
+        overflow-y: scroll;
+    } */
+    .name-web {
+        margin-left: 20px;
+    }
+
+    .Tiktek {
+        font-size: 23px;
+        color: orange;
+    }
+
+    .search-bar {
+        padding: 1px 10px;
+    }
+
+        .search-bar input[type="text"] {
+            padding: 5px;
+        }
+
+            .search-bar input[type="text"]::placeholder {
+                font-size: 12px;
+            }
+
+    .icon-search {
+        height: 13px;
+    }
+
+    .vertical-line {
+        height: 13px;
+    }
+
+    .actions {
+        margin-right: 30px;
+    }
+
+    .profile-button {
+        height: 33px;
+        width: 75px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+
+    .dropdown-content {
+        min-width: 105px;
+    }
+
+        .dropdown-content a {
+            font-size: 14px;
+        }
+
+    /* Điều chỉnh cấu trúc sidebar-left */
+    .sidebar-left {
+        display: none;
+    }
+
+    .body-tiktek {
+        /* display: flex; */
+        width: 100%;
+    }
+
+    .maincontent {
+        width: 100%;
+        margin-top: 23px;
+        /* margin-left: 10px; */
+        /* top: 140px; */
+        /* position: absolute; */
+        /* right: 200px;
+    z-index: 50; */
+    }
+
+    .account {
+        margin-left: 10px;
+    }
+
+    .chanel-img {
+        /* position: absolute; */
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    .mieuta {
+        margin-left: 15px;
+    }
+
+    .userMain {
+        /* position: absolute; */
+        /* left: 135px; */
+        font-weight: bold;
+        /* top: -20px; */
+        font-size: 23px;
+        margin-top: 10px;
+    }
+
+    .decrip {
+        margin-top: 6px;
+        font-size: 15px;
+        /* margin: 0; */
+        /* position: absolute; */
+        /* left: 135px; */
+        /* font-weight: 400; */
+        /* top: 40px; */
+    }
+
+    .editUser {
+        margin-top: 10px;
+        width: 115px;
+        height: 30px;
+        position: relative;
+        border: 2px solid rgb(133, 133, 133);
+        align-items: center;
+        border-radius: 5px;
+        /* top: 75px;
+    left: 135px; */
+    }
+
+        .editUser a img {
+            position: absolute;
+            left: 8px;
+            top: 6px;
+            width: 18px;
+            height: 18px;
+        }
+
+        .editUser a p {
+            font-size: 14px;
+            width: 100px;
+            position: absolute;
+            left: 35px;
+            top: -5px;
+        }
+
+    .info {
+        margin-top: 20px;
+        margin-left: 35px;
+        display: flex;
+        position: relative;
+        /* top: 90px;
+    left: -65px; */
+        justify-content: space-between;
+        width: 80%;
+    }
+
+        .info .fllowing,
+        .info .fllower,
+        .info .like {
+            text-align: center;
+        }
+
+        .info p {
+            margin: 0;
+            font-size: 14px;
+        }
+    /*ListVideo*/
+    /* .decrip span {
+    position: absolute; 
+    top: 0px;
+    left: 50px;
+} */
+
+    /* .decrip strong {
+    position: absolute; 
+    top: 17px;
+    left: 55px;
+} */
+
+    .video {
+        width: 100%;
+        height: 100%;
+        /* position: absolute;
+    top: 170px; */
+    }
+
+        .video strong {
+            margin-left: 10px;
+        }
+
+    .grid-video video {
+        margin-left: 5px;
+        width: 180px;
+        height: 190px;
+    }
+
+    .grid-video {
+        margin-top: 15px;
+        margin-left: 5px;
+        margin-right: 7px;
+        /*display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 5px;*/
+    }
+
+    .girdview_items {
+        width: 190px;
+    }
+}
+
+/*@media only screen and (min-width: 760px) and (max-width: 1024px) {*/
+    /* .sidebar-right {
+        width: 100%;
+    } */
+
+    /*.header {
+        height: 85px;*/ /* Thu nhỏ padding để tiết kiệm không gian */
+    /*}
+
+    .search-bar input[type="text"] {
+        width: 230px;
+    }*/
+    /* Di chuyển các nút tim, share, và comment vào góc dưới bên phải */
+    /* .body-tiktek {
+        overflow-y: scroll ;
+    } */
+
+    /* Điều chỉnh cấu trúc sidebar-left */
+    /*.sidebar-left {
+        display: none;
+    }*/
+
+    /* Di chuyển các nút tim, share, và comment vào góc dưới bên phải */
+    /*.body-tiktek {*/
+        /* display: flex; */
+        /*width: 100%;
+    }
+
+    .maincontent {
+        width: 100%;
+        margin-top: 30px;*/
+        /* top: 140px; */
+        /* position: absolute; */
+        /* right: 200px;
+        z-index: 50; */
+    /*}
+
+    .account {
+        display: flex;
+        margin-left: 20px;
+    }
+
+    .chanel-img {*/
+        /* position: absolute; */
+        /*width: 116px;
+        height: 116px;
+        border-radius: 50%;
+    }
+
+    .mieuta {
+        margin-left: 20px;
+    }
+
+    .userMain {*/
+        /* position: absolute; */
+        /* left: 135px; */
+        /*font-weight: bold;*/
+        /* top: -20px; */
+        /*font-size: 30px;
+        margin-top: 15px;
+    }
+
+    .decrip {
+        margin-top: 8px;
+        font-size: 18px;*/
+        /* margin: 0; */
+        /* position: absolute; */
+        /* left: 135px; */
+        /* font-weight: 400; */
+        /* top: 40px; */
+    /*}
+
+    .editUser {
+        margin-top: 10px;
+        width: 150px;
+        height: 36px;
+        position: relative;
+        border: 2px solid rgb(133, 133, 133);
+        align-items: center;
+        border-radius: 5px;*/
+        /* top: 75px;
+        left: 135px; */
+    /*}
+
+        .editUser a img {
+            position: absolute;
+            left: 15px;
+            top: 5px;
+            width: 24px;
+            height: 24px;
+        }
+
+        .editUser a p {
+            font-size: 15px;
+            width: 100px;
+            position: absolute;
+            left: 50px;
+            top: -5px;
+        }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .info {
+        margin-top: 20px;
+        margin-left: 50px;
+        display: flex;
+        position: relative;*/
+        /* top: 90px;
+        left: -65px; */
+        /*justify-content: space-between;
+        width: 70%;
+    }
+
+        .info .fllowing,
+        .info .fllower,
+        .info .like {
+            text-align: center;
+        }
+
+        .info p {
+            margin: 0;
+            font-size: 16px;
+        }*/
+    /*ListVideo*/
+    /* .decrip span {
+        position: absolute; 
+        top: 0px;
+        left: 50px;
+    } */
+
+    /* .decrip strong {
+        position: absolute; 
+        top: 17px;
+        left: 55px;
+    } */
+
+    /*.video {
+        width: 100%;
+        height: 100%;*/
+        /* position: absolute;
+        top: 170px; */
+    /*}
+
+        .video strong {
+            margin-left: 20px;
+        }
+
+    .grid-video video {
+        margin-left: 5px;
+        width: 230px;
+        height: 200px;
+    }
+
+    .grid-video {
+        margin-top: 15px;
+        margin-left: 5px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 8px;
+    }
+
+    .girdview_items {
+        width: 240px;
+    }
+
+    .decripstion {
+        width: 100%;
+        height: 0%;
+        margin: auto;
+    }
+}*/
